@@ -11,6 +11,7 @@ int main(int argc, char *argv[])
 	size_t n_read = 0;
 	stack_t *stack = NULL;
 	int line_number;
+	FILE *file;
 	
 
 	if (argc != 2)
