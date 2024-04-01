@@ -55,12 +55,11 @@ int global_n;
 
 void push(stack_t **stack, unsigned int line_number);
 void pall(stack_t **stack, unsigned int line_number);
-void search_execute(char *input, stack_t **stack, int line_number);
-void free_stack(stack_t *stack);
+void execute(char *input, stack_t **stack, int line_number);
+void stack_free(stack_t *stack);
 void cleanup(FILE *file, char *input, stack_t *stack);
 void pop(stack_t **stack, unsigned int line_number);
 void add(stack_t **stack, unsigned int line_number);
 void swap(stack_t **stack, unsigned int line_number);
-
-
+void (*choose(char *operation)) (stack_t**, unsigned int);
 #endif
